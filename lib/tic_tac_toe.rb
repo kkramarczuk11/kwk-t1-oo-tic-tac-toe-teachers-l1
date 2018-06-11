@@ -121,7 +121,7 @@ end
    end
   end
 
-  def play(board)
+  def play
       until over?
         turn
       end
