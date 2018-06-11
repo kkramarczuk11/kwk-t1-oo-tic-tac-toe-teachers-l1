@@ -113,8 +113,8 @@ end
     end
   end
 
-  def winner(board)
-   if solution = won?(board)
+  def winner
+   if solution = won?
     @board[solution.first]
    else
     nil
