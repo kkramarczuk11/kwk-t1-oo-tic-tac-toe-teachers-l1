@@ -29,7 +29,10 @@ class TicTacToe
 
   def move(board, index, current_player = "X" or "O")
     @board[index] = current_player
-    if
+    if index == even 
+      current_player = "O"
+    else current_player = "X"
+    end
   end
 
   def position_taken?(board, index)
