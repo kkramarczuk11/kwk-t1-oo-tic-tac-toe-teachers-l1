@@ -89,13 +89,13 @@ end
   end
   end
 
-  def full?(board)
+  def full?
     @board.all? do |cell|
     cell == "X" || cell == "O"
   end
   end
 
-  def draw?(board)
+  def draw?
     if !won?(board) && full?(board)
       true
     elsif !won?(board) && !full?(board)
