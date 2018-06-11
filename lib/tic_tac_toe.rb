@@ -69,8 +69,12 @@ class TicTacToe
   counter
 end
 
-  def current_player
-    turn_count(board) % 2 == 0 ? "X" : "O"
+  def current_player(board)
+    if turn_count(board).even?
+      return "X"
+    else
+      return "O"
+    end
   end
 
   def won?(board)
