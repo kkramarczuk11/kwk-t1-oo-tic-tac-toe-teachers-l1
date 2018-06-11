@@ -36,7 +36,7 @@ class TicTacToe
       true
     else
       false
-    end 
+    end
   end
 
   def valid_move?(board, index)
