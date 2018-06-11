@@ -15,7 +15,7 @@ class TicTacToe
     [2,5,8]
   ]
 
-  def display_board 
+  def display_board
       puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
       puts "-----------"
       puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
@@ -31,8 +31,8 @@ class TicTacToe
     board[index] = current_player
   end
 
-  def position_taken?(board, location)
-    board[location] != " " && board[location] != ""
+  def position_taken?(board, index)
+    board[index] != " " && board[location] != ""
   end
 
   def valid_move?(board, index)
