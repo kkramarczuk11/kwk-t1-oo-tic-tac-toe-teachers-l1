@@ -27,9 +27,9 @@ class TicTacToe
     user_input.to_i - 1
   end
 
-  def move(board, index, current_player = "X" or "O")
+  def move(board, index, current_player = "X")
     @board[index] = current_player
-    if index == even 
+    if index == even
       current_player = "O"
     else current_player = "X"
     end
