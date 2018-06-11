@@ -77,7 +77,7 @@ end
     end
   end
 
-  def won?(board)
+  def won?
   WIN_COMBINATIONS.detect do |position|
     if @board[position[0]] == "X" && @board[position[1]] == "X" && @board[position[2]] == "X"
       position
