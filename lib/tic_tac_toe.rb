@@ -3,7 +3,7 @@ class TicTacToe
   def initialize(board)
     @board = board || Array.new(9, " ")
   end
-  
+
   WIN_COMBINATIONS = [
     [0,1,2],
     [3,4,5],
@@ -14,7 +14,7 @@ class TicTacToe
     [0,3,6],
     [2,5,8]
   ]
-  
+
   def input_to_index(user_input)
     user_input.to_i - 1
   end
@@ -102,7 +102,5 @@ class TicTacToe
     nil
    end
   end
-
-end
 
 end
